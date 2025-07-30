@@ -1,0 +1,117 @@
+/* Import Google Fonts - Add @import statement at the top [cite: 22] */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Playfair+Display:wght@400;700&display=swap');
+
+/* App Background */
+body, html {
+    /* Full page gradient example [cite: 21] */
+    background: linear-gradient(to right, #e0f2f7, #c1e7f0); /* Light blue gradient */
+    overflow: auto; /* Ensure gradient covers the entire page [cite: 22] */
+    min-height: 100vh; /* Ensure it covers the full viewport height */
+}
+
+/* Navigation Bar & Hero */
+.bg-light { /* Element with class "bg-light" */
+    background: linear-gradient(to right, #a7d9f2, #7ecaf5) !important; /* Example gradient */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); /* Example box shadow [cite: 21] */
+}
+
+/* Navigation "Brand" */
+.navbar-light .navbar-brand { /* Element with class "navbar-brand" inside an element with class "navbar-light" */
+    font-family: 'Playfair Display', serif; /* Cool font from Google Fonts [cite: 22] */
+    color: #1a4f6d; /* New Text Colour */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3); /* Text shadow */
+    font-weight: 700;
+}
+
+/* Navigation "Link" */
+.nav-link { /* Anchor element with class "nav-link" */
+    font-family: 'Roboto', sans-serif; /* Cool font from Google Fonts [cite: 22] */
+    color: #2c5f7e; /* New Text Colour */
+    transition: color 0.3s ease-in-out, text-shadow 0.3s ease-in-out;
+}
+
+.nav-link:hover { /* Anchor element with class "nav-link" when "hovered" */
+    color: #007bff; /* Hover colour */
+    text-decoration: none;
+    text-shadow: 0 0 5px rgba(0, 123, 255, 0.5); /* Subtle text shadow on hover */
+}
+
+/* Table cells inside "odd" numbered table rows */
+table tr:nth-child(odd) td { /* "td" elements, inside all (odd) "tr" elements, inside a "table" element */
+    background-color: #f7faff; /* Light background for odd rows */
+}
+
+/* All "Heading" elements */
+h1, h2, h3, h4, h5, h6 { /* All elements from "h1" to "h6" */
+    font-family: 'Playfair Display', serif; /* Cool font from Google Fonts [cite: 22] */
+    color: #2a3a4a; /* New Text Colour */
+    text-shadow: 0.5px 0.5px 1px rgba(0, 0, 0, 0.15); /* Text shadow */
+    margin-top: 1.5em;
+    margin-bottom: 0.8em;
+}
+
+/* All "Anchor" elements (HTML Links) */
+a { /* "a" elements */
+    color: #007bff; /* New Text Colour */
+    text-decoration: none;
+    transition: color 0.3s ease-in-out;
+}
+
+a:hover { /* "a" elements when hovered */
+    color: #0056b3; /* Hover colour */
+    text-decoration: underline;
+}
+
+/* All "List" elements */
+ol, ul { /* "ol" and "ul" elements */
+    margin-left: 25px; /* Adjust left margin for indentation */
+    padding-top: 8px; /* Adjust top padding for spacing */
+    padding-bottom: 8px; /* Adjust bottom padding for spacing */
+}
+
+ol li, ul li { /* "li" elements inside "ol" / "ul" elements */
+    margin-bottom: 6px; /* Add margin to bottom of list items for better spacing */
+    line-height: 1.6; /* Improve readability */
+}
+
+/* Specific styling for the table in about.html (class="table") */
+.table {
+    width: 100%;
+    margin-bottom: 1rem;
+    color: #212529;
+    border-collapse: collapse;
+}
+
+.table th,
+.table td {
+    padding: 0.75rem;
+    vertical-align: top;
+    border-top: 1px solid #dee2e6;
+}
+
+.table thead th {
+    vertical-align: bottom;
+    border-bottom: 2px solid #dee2e6;
+}
+
+.table tbody + tbody {
+    border-top: 2px solid #dee2e6;
+}
+
+.table-bordered {
+    border: 1px solid #dee2e6;
+}
+
+.table-bordered th,
+.table-bordered td {
+    border: 1px solid #dee2e6;
+}
+
+.table-bordered thead th,
+.table-bordered thead td {
+    border-bottom-width: 2px;
+}
+
+.table-striped tbody tr:nth-of-type(odd) {
+    background-color: rgba(0, 0, 0, 0.05);
+}
